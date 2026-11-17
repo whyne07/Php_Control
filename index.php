@@ -1,7 +1,7 @@
 <?php
 
 // REQUIRE FILE
-require_once 'includes/header.php';
+include 'header.php';
 
 // STUDENT INFORMATION (ARRAY)
 $students = [
@@ -175,6 +175,6 @@ $result = ($average >= 75) ? "PASSED" : "FAILED";
 <?php
 
 // INCLUDE FILE
-include 'includes/footer.php';
+include 'footer.php';
 
 ?>

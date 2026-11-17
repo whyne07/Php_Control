@@ -1,6 +1,6 @@
 <?php
 
-require_once 'header.php';
+include 'header.php';
 
 $students = [
     ["name" => "Juan Dela Cruz", "grade" => 95],

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'includes/header.php';
+require_once 'header.php';
 
 $students = [
     ["name" => "Juan Dela Cruz", "grade" => 95],
@@ -163,6 +163,6 @@ $result = ($average >= 75) ? "PASSED" : "FAILED";
 
 <?php
 
-include 'includes/footer.php';
+include 'footer.php';
 
 ?>

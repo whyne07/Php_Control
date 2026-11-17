@@ -1,9 +1,7 @@
 <?php
 
-// REQUIRE FILE
-include 'header.php';
+require_once 'includes/header.php';
 
-// STUDENT INFORMATION (ARRAY)
 $students = [
     ["name" => "Juan Dela Cruz", "grade" => 95],
     ["name" => "Maria Santos", "grade" => 88],
@@ -16,7 +14,6 @@ $totalStudents = count($students);
 $passed = 0;
 $failed = 0;
 
-// FUNCTION TO DETERMINE REMARKS
 function getRemark($grade) {
 
     if ($grade >= 90) {
@@ -30,7 +27,6 @@ function getRemark($grade) {
     }
 }
 
-// MATCH EXPRESSION
 function getPerformance($grade) {
 
     return match (true) {
@@ -61,7 +57,6 @@ performance of our students.</p>
 
     <?php
 
-    // FOREACH LOOP
     $number = 1;
 
     foreach ($students as $student) {
@@ -69,7 +64,6 @@ performance of our students.</p>
         $name = $student["name"];
         $grade = $student["grade"];
 
-        // IF-ELSE CONDITIONAL
         if ($grade >= 75) {
             $status = "PASSED";
             $passed++;
@@ -97,7 +91,6 @@ performance of our students.</p>
 
 <?php
 
-// FOR LOOP
 echo "<p>Student Grade Evaluation:</p>";
 
 for ($i = 0; $i < $totalStudents; $i++) {
@@ -117,7 +110,6 @@ for ($i = 0; $i < $totalStudents; $i++) {
 
 <?php
 
-// SWITCH STATEMENT
 echo "<h3>Class Performance</h3>";
 
 switch (true) {
@@ -139,7 +131,6 @@ switch (true) {
         break;
 }
 
-// WHILE LOOP
 echo "<h3>Counting Students Using While Loop</h3>";
 
 $count = 1;
@@ -149,7 +140,6 @@ while ($count <= $totalStudents) {
     $count++;
 }
 
-// DO-WHILE LOOP
 echo "<h3>Do-While Loop Example</h3>";
 
 $attempt = 1;
@@ -159,7 +149,6 @@ do {
     $attempt++;
 } while ($attempt <= 3);
 
-// TERNARY OPERATOR
 $average = array_sum(array_column($students, "grade"))
            / $totalStudents;
 
@@ -174,7 +163,6 @@ $result = ($average >= 75) ? "PASSED" : "FAILED";
 
 <?php
 
-// INCLUDE FILE
-include 'footer.php';
+include 'includes/footer.php';
 
 ?>

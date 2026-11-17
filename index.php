@@ -1,6 +1,23 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-require_once 'includes/header.php';
+<header>
+    <h1>Student Grade Management System</h1>
+    <p>Welcome to our PHP Control Structures Activity!</p>
+</header>
+
+<nav>
+    <a href="index.php">Home</a>
+</nav>
+
+<main>
+
+<?php
 
 $students = [
     ["name" => "Juan Dela Cruz", "grade" => 95],
@@ -163,6 +180,15 @@ $result = ($average >= 75) ? "PASSED" : "FAILED";
 
 <?php
 
-include 'includes/footer.php';
 
 ?>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Student Grade Management System</p>
+    <p>Created using PHP Control Structures.</p>
+</footer>
+
+</body>
+</html>
